@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background:url('images/books.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+}
+h1 {
+
+  font-weight: lighter;
+  font-family: monospace, serif;
+  font-size: 4em;
+  margin: 0;
+  padding: 25px;
+  color: white;
+}
+input {
+  font-weight: lighter;
+  font-size: 2em;
+  margin: 30px 0;
+
+}
+button {
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5%;
+  font-weight: lighter;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+a {
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+.main-header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.secodary-header {
+
+}
+.main-header,
+.secondary-header {
+  text-align: center;
+}
+.content {
+  background-color: white;
+  margin: 50px auto;
+  width: 75%;
+  padding: 50px;
+}

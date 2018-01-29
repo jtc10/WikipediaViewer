@@ -18,13 +18,12 @@ $('#search').on('keyup keypress', function (event) {
     dataType: 'jsonp',
     type: 'GET',
     success: function (data) {
-      let results = '';
-      for (let i = 0; i < 10; i++) {
-        const link = `<a href='${data[3][i]}>'${data[1][i]}</a>`;
-        const split = data[2][i].split('.').join('') + '...';
-        results += `<div class="content">${link}<br><br>${split}</div>`;
-      }
-      $('.container').html(results);
-    }
+        $('.container').html('');
+        for (var i = 0; i < 10; i++) {
+          const link = '<a href=' + data[3][i] + '>' + data[1][i] + '</a>';
+          const split = data[2][i].split('.').join('') + '...';
+          $('.container').append('<div class="content">' + link + '<br><br>' + split + '</div>');
+        }
+     }
   });
 });
